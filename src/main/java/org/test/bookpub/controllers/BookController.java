@@ -23,8 +23,8 @@ public class BookController {
     }
 
     @RequestMapping(value = "/{isbn}", method = RequestMethod.GET)
-    public Book getBook(@PathVariable String isbn) {
+    public Book getBook(@PathVariable Isbn isbn) {
         System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ISBN " + isbn);
-        return bookRepository.findBookByIsbn(isbn);
+        return bookRepository.findBookByIsbn(isbn.getIsbn());
     }
 }
