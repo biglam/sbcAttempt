@@ -6,7 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.test.bookpub.entity.Book;
+import org.test.bookpub.entity.Reviewer;
 import org.test.bookpub.repository.BookRepository;
+
+import java.util.List;
 
 /**
  * Created by lam on 11/07/16.
@@ -26,5 +29,10 @@ public class BookController {
     public Book getBook(@PathVariable Isbn isbn) {
         System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ISBN " + isbn);
         return bookRepository.findBookByIsbn(isbn.getIsbn());
+    }
+
+    @RequestMapping(value = "/{isbn}/reviewers", method = RequestMethod.GET)
+    public List<Reviewer> getReviewers(@PathVariable("isbn") Book book) {
+        return book.getReviewers();
     }
 }

@@ -25,10 +25,10 @@ public class Book {
 
     protected Book() {}
 
-    public Book(String isbn, String title, String description, Author author, Publisher publisher) {
+    public Book(String isbn, String title, Author author, Publisher publisher) {
         this.isbn = isbn;
         this.title = title;
-        this.description = description;
+//        this.description = description;
         this.author = author;
         this.publisher = publisher;
     }
