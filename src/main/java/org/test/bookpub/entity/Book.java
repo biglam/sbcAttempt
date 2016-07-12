@@ -1,12 +1,14 @@
+
 package org.test.bookpub.entity;
+
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import javax.persistence.*;
 import java.util.List;
 
-/**
- * Created by lam on 11/07/16.
- */
 @Entity
+@JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id", scope=Book.class)
 public class Book {
     @Id
     @GeneratedValue
@@ -17,19 +19,18 @@ public class Book {
 
     @ManyToOne
     private Author author;
+
     @ManyToOne
     private Publisher publisher;
 
     @ManyToMany
     private List<Reviewer> reviewers;
 
-    protected Book() {
-    }
+    protected Book() {}
 
     public Book(String isbn, String title, Author author, Publisher publisher) {
         this.isbn = isbn;
         this.title = title;
-//        this.description = description;
         this.author = author;
         this.publisher = publisher;
     }
