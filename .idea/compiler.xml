@@ -19,6 +19,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="db-count-starter_main" target="1.8" />
+      <module name="db-count-starter_test" target="1.8" />
       <module name="sbc-generated_main" target="1.8" />
       <module name="sbc-generated_test" target="1.8" />
     </bytecodeTargetLevel>
