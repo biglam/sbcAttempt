@@ -20,7 +20,8 @@ public class Author {
     @OneToMany(mappedBy = "author")
     private List<Book> books;
 
-    protected Author() {}
+    protected Author() {
+    }
 
     public Author(String firstName, String lastName) {
         this.firstName = firstName;

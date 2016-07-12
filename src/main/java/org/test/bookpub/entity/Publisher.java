@@ -18,7 +18,8 @@ public class Publisher {
     @OneToMany(mappedBy = "publisher")
     private List<Book> books;
 
-    protected Publisher() {}
+    protected Publisher() {
+    }
 
     public Publisher(String name) {
         this.name = name;

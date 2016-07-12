@@ -8,6 +8,6 @@ import org.test.bookpub.entity.Book;
  * Created by lam on 11/07/16.
  */
 @Repository
-public interface BookRepository extends CrudRepository<Book, Long>{
+public interface BookRepository extends CrudRepository<Book, Long> {
     public Book findBookByIsbn(String isbn);
 }

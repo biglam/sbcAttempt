@@ -10,15 +10,15 @@ import org.test.bookpub.StartupRunner;
 @EnableScheduling
 public class BookpubApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(BookpubApplication.class, args);
+    public static void main(String[] args) {
+        SpringApplication.run(BookpubApplication.class, args);
 
-	}
+    }
 
-	@Bean
-	public StartupRunner schedulerRunner() {
-		return new StartupRunner();
-	}
+    @Bean
+    public StartupRunner schedulerRunner() {
+        return new StartupRunner();
+    }
 
 
 }

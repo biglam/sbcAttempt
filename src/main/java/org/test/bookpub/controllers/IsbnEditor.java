@@ -30,7 +30,7 @@ public class IsbnEditor extends PropertyEditorSupport {
     }
 
     @InitBinder
-    public void initBinder(WebDataBinder binder)  {
+    public void initBinder(WebDataBinder binder) {
         binder.registerCustomEditor(Isbn.class, new IsbnEditor());
     }
 }
