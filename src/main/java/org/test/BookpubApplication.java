@@ -9,11 +9,13 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.test.bookpub.StartupRunner;
 import org.test.bookpubstarter.dbcount.DbCountRunner;
+import org.test.bookpubstarter.dbcount.EnableDbCounting;
 
 import java.util.Collection;
 
 @SpringBootApplication
 @EnableScheduling
+@EnableDbCounting
 public class BookpubApplication {
 
     public static void main(String[] args) {
@@ -26,15 +28,15 @@ public class BookpubApplication {
         return new StartupRunner();
     }
 
-    protected final Log logger = LogFactory.getLog(getClass());
-    @Bean
-    public DbCountRunner dbCountRunner(Collection<CrudRepository> repositories) {
-        return new DbCountRunner(repositories) {
-          @Override
-            public void run(String... args) throws Exception {
-              logger.info("Manually Declared!");
-          }
-        };
-    }
+//    protected final Log logger = LogFactory.getLog(getClass());
+//    @Bean
+//    public DbCountRunner dbCountRunner(Collection<CrudRepository> repositories) {
+//        return new DbCountRunner(repositories) {
+//          @Override
+//            public void run(String... args) throws Exception {
+//              logger.info("Manually Declared!");
+//          }
+//        };
+//    }
 
 }
