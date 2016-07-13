@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="| 978-1-78398-478-7 | Orchestrating Docker |" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-07-13T14:39:08" hostname="lam-System-Product-Name" time="0.134">
+  <properties/>
+  <testcase name="Given packt-books fixture is loaded" classname="| 978-1-78398-478-7 | Orchestrating Docker |" time="0.0"/>
+  <testcase name="Given catalogue with books" classname="| 978-1-78398-478-7 | Orchestrating Docker |" time="0.001"/>
+  <testcase name="When requesting url /books/978-1-78398-478-7" classname="| 978-1-78398-478-7 | Orchestrating Docker |" time="0.0"/>
+  <testcase name="Then status code will be 200" classname="| 978-1-78398-478-7 | Orchestrating Docker |" time="0.0"/>
+  <testcase name="And response content contains Orchestrating Docker" classname="| 978-1-78398-478-7 | Orchestrating Docker |" time="0.001"/>
+  <testcase name="classMethod" classname="| 978-1-78398-478-7 | Orchestrating Docker |" time="0.147"/>
+  <system-out><![CDATA[2016-07-13 15:39:08.827  INFO 17311 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.test.RestfulStepdefs]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-07-13 15:39:08.828  INFO 17311 --- [    Test worker] o.s.t.c.web.WebTestContextBootstrapper   : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-07-13 15:39:08.829  INFO 17311 --- [    Test worker] o.s.t.c.web.WebTestContextBootstrapper   : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@21330ee9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1248728e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@b08c5d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@9b4baa4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3049b93d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@614471b8]
+2016-07-13 15:39:08.829  INFO 17311 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Replacing scope 'cucumber-glue' from [cucumber.runtime.java.spring.GlueCodeScope@495f3c25] to [cucumber.runtime.java.spring.GlueCodeScope@3422f462]
+2016-07-13 15:39:08.831  INFO 17311 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-07-13 15:39:08.831  INFO 17311 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-07-13 15:39:08.834  INFO 17311 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2016-07-13 15:39:08.837  INFO 17311 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [packt-books.sql]
+2016-07-13 15:39:08.839  INFO 17311 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [packt-books.sql] in 2 ms.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

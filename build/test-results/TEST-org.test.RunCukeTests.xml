@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.test.RunCukeTests" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="lam-System-Product-Name" time="0.0">
+  <properties/>
+  <system-out><![CDATA[@txn
+Feature: Finding a book by ISBN
+
+  Background: Preloads DB Mock Data     # org/test/repositories.feature:3
+    Given packt-books fixture is loaded # RepositoryStepdefs.data_fixture_is_loaded(String)
+
+  Scenario: Load one book                             # org/test/repositories.feature:6
+    Given 3 books available in the catalogue          # RepositoryStepdefs.books_available_in_the_catalogue(int)
+    When searching for book by isbn 978-1-78398-478-7 # RepositoryStepdefs.searching_for_book_by_isbn(String)
+    Then book title will be Orchestrating Docker      # RepositoryStepdefs.book_title_will_be(String)
+@txn
+Feature: Finding a book via REST API
+
+  Scenario Outline: Using RESTful API to lookup books by ISBN # org/test/restful.feature:6
+    Given catalogue with books
+    When requesting url /books/<isbn>
+    Then status code will be 200
+    And response content contains <title>
+
+    Examples: 
+
+  Background:                           # org/test/restful.feature:3
+    Given packt-books fixture is loaded # RepositoryStepdefs.data_fixture_is_loaded(String)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ISBN org.test.bookpub.controllers.Isbn@3fbd0ffb
+
+  Background:                           # org/test/restful.feature:3
+    Given packt-books fixture is loaded # RepositoryStepdefs.data_fixture_is_loaded(String)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ISBN org.test.bookpub.controllers.Isbn@4c6d2365
+
+  @txn
+  Scenario Outline: Using RESTful API to lookup books by ISBN # org/test/restful.feature:15
+    Given catalogue with books                                # RestfulStepdefs.catalogue_with_books()
+    When requesting url /books/978-1-78528-415-1              # RestfulStepdefs.requesting_url(String)
+    Then status code will be 200                              # RestfulStepdefs.status_code_will_be(int)
+    And response content contains Spring Boot Recipes         # RestfulStepdefs.response_content_contains(String)
+
+3 Scenarios (3 passed)
+14 Steps (14 passed)
+0m0.300s
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
