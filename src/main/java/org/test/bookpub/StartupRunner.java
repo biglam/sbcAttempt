@@ -32,12 +32,12 @@ public class StartupRunner implements CommandLineRunner {
 //        logger.info("DataSource: " + ds.toString());
         logger.info("Number of Books: " + bookRepository.count());
 
-        Author author = new Author("Alex", "Antonov");
-        author = authorRepository.save(author);
-        Publisher publisher = new Publisher("Packt");
-        publisher = publisherRepository.save(publisher);
-        Book book = new Book("978-1-78528-415-1", "Spring Boot Recipes", author, publisher);
-        bookRepository.save(book);
+//        Author author = new Author("Alex", "Antonov");
+//        author = authorRepository.save(author);
+//        Publisher publisher = new Publisher("Packt");
+//        publisher = publisherRepository.save(publisher);
+//        Book book = new Book("978-1-78528-415-1", "Spring Boot Recipes", author, publisher);
+//        bookRepository.save(book);
     }
 
     @Scheduled(initialDelay = 1000, fixedRate = 10000)
