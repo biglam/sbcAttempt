@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.test.bookpub.SpockBookRepositorySpecification</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.test.bookpub.SpockBookRepositorySpecification</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.test.bookpub.html">org.test.bookpub</a> &gt; SpockBookRepositorySpecification</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.145s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Insert another book</td>
+<td>0.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test RESTful GET</td>
+<td>0.096s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test RESTful GET books by publisher</td>
+<td>0.024s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2016-07-13 16:34:07.690  INFO 19573 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.test.bookpub.SpockBookRepositorySpecification]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-07-13 16:34:07.691  INFO 19573 --- [    Test worker] o.s.t.c.web.WebTestContextBootstrapper   : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-07-13 16:34:07.691  INFO 19573 --- [    Test worker] o.s.t.c.web.WebTestContextBootstrapper   : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4eb49fa4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@340c25, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@f67ee97, org.springframework.test.context.support.DirtiesContextTestExecutionListener@31bc2d21, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5b1fdd0d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7b6ab76f]
+2016-07-13 16:34:07.738  INFO 19573 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@492a5ccd testClass = SpockBookRepositorySpecification, testInstance = org.test.bookpub.SpockBookRepositorySpecification@54b5d48d, testMethod = $spock_feature_0_0@SpockBookRepositorySpecification, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5a13a437 testClass = SpockBookRepositorySpecification, locations = '{}', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5ef35a61]; rollback [true]
+2016-07-13 16:34:07.747  INFO 19573 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-07-13 16:34:07.747  INFO 19573 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-07-13 16:34:07.749  INFO 19573 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2016-07-13 16:34:07.759  INFO 19573 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [packt-books.sql]
+2016-07-13 16:34:07.760  INFO 19573 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [packt-books.sql] in 1 ms.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ISBN org.test.bookpub.controllers.Isbn@b97fd87
+2016-07-13 16:34:07.788  INFO 19573 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test context [DefaultTestContext@492a5ccd testClass = SpockBookRepositorySpecification, testInstance = org.test.bookpub.SpockBookRepositorySpecification@54b5d48d, testMethod = $spock_feature_0_0@SpockBookRepositorySpecification, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5a13a437 testClass = SpockBookRepositorySpecification, locations = '{}', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]].
+2016-07-13 16:34:07.790  INFO 19573 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@492a5ccd testClass = SpockBookRepositorySpecification, testInstance = org.test.bookpub.SpockBookRepositorySpecification@5008847f, testMethod = $spock_feature_0_0@SpockBookRepositorySpecification, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5a13a437 testClass = SpockBookRepositorySpecification, locations = '{}', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5ef35a61]; rollback [true]
+2016-07-13 16:34:07.790  INFO 19573 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [packt-books.sql]
+2016-07-13 16:34:07.791  INFO 19573 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [packt-books.sql] in 1 ms.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ISBN org.test.bookpub.controllers.Isbn@6e0c1ec2
+2016-07-13 16:34:07.797  INFO 19573 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test context [DefaultTestContext@492a5ccd testClass = SpockBookRepositorySpecification, testInstance = org.test.bookpub.SpockBookRepositorySpecification@5008847f, testMethod = $spock_feature_0_0@SpockBookRepositorySpecification, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5a13a437 testClass = SpockBookRepositorySpecification, locations = '{}', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]].
+2016-07-13 16:34:07.799  INFO 19573 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@492a5ccd testClass = SpockBookRepositorySpecification, testInstance = org.test.bookpub.SpockBookRepositorySpecification@5935eb4f, testMethod = $spock_feature_0_1@SpockBookRepositorySpecification, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5a13a437 testClass = SpockBookRepositorySpecification, locations = '{}', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5ef35a61]; rollback [true]
+2016-07-13 16:34:07.799  INFO 19573 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [packt-books.sql]
+2016-07-13 16:34:07.800  INFO 19573 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [packt-books.sql] in 1 ms.
+2016-07-13 16:34:07.823  INFO 19573 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test context [DefaultTestContext@492a5ccd testClass = SpockBookRepositorySpecification, testInstance = org.test.bookpub.SpockBookRepositorySpecification@5935eb4f, testMethod = $spock_feature_0_1@SpockBookRepositorySpecification, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5a13a437 testClass = SpockBookRepositorySpecification, locations = '{}', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]].
+2016-07-13 16:34:07.824  INFO 19573 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [packt-books.sql]
+2016-07-13 16:34:07.825  INFO 19573 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [packt-books.sql] in 1 ms.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.13</a> at 13-Jul-2016 16:34:10</p>
+</div>
+</div>
+</body>
+</html>

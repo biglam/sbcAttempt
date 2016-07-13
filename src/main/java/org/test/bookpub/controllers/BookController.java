@@ -1,13 +1,16 @@
 package org.test.bookpub.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.test.bookpub.entity.Book;
+import org.test.bookpub.entity.Publisher;
 import org.test.bookpub.entity.Reviewer;
 import org.test.bookpub.repository.BookRepository;
+import org.test.bookpub.repository.PublisherRepository;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
@@ -40,5 +43,15 @@ public class BookController {
     @RequestMapping(value = "/session", method = RequestMethod.GET)
     public String getSessionId(HttpServletRequest request) {
         return request.getSession().getId();
+    }
+
+    @Autowired
+    private PublisherRepository publisherRepository;
+
+    @RequestMapping(value = "/publisher/{id}", method = RequestMethod.GET)
+    public List<Book> getBooksByPublisher(@PathVariable("id") Long id) {
+        Publisher publisher = publisherRepository.findOne(id);
+        Assert.notNull(publisher);
+        return publisher.getBooks();
     }
 }

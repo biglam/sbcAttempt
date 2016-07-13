@@ -13,11 +13,11 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 4650789,
+  "duration": 3048912,
   "status": "passed"
 });
 formatter.before({
-  "duration": 26068165,
+  "duration": 8211684,
   "status": "passed"
 });
 formatter.background({
@@ -42,7 +42,7 @@ formatter.match({
   "location": "RepositoryStepdefs.data_fixture_is_loaded(String)"
 });
 formatter.result({
-  "duration": 71925166,
+  "duration": 61920467,
   "status": "passed"
 });
 formatter.scenario({
@@ -78,7 +78,7 @@ formatter.match({
   "location": "RepositoryStepdefs.books_available_in_the_catalogue(int)"
 });
 formatter.result({
-  "duration": 1424971,
+  "duration": 1292675,
   "status": "passed"
 });
 formatter.match({
@@ -91,7 +91,7 @@ formatter.match({
   "location": "RepositoryStepdefs.searching_for_book_by_isbn(String)"
 });
 formatter.result({
-  "duration": 38425933,
+  "duration": 4573925,
   "status": "passed"
 });
 formatter.match({
@@ -104,11 +104,11 @@ formatter.match({
   "location": "RepositoryStepdefs.book_title_will_be(String)"
 });
 formatter.result({
-  "duration": 86194,
+  "duration": 75056,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2700610,
+  "duration": 2445217,
   "status": "passed"
 });
 formatter.uri("org/test/restful.feature");
@@ -187,11 +187,11 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 472326,
+  "duration": 357953,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4528469,
+  "duration": 2194657,
   "status": "passed"
 });
 formatter.background({
@@ -216,7 +216,7 @@ formatter.match({
   "location": "RepositoryStepdefs.data_fixture_is_loaded(String)"
 });
 formatter.result({
-  "duration": 2807678,
+  "duration": 717094,
   "status": "passed"
 });
 formatter.scenario({
@@ -263,7 +263,7 @@ formatter.match({
   "location": "RestfulStepdefs.catalogue_with_books()"
 });
 formatter.result({
-  "duration": 1049398,
+  "duration": 508958,
   "status": "passed"
 });
 formatter.match({
@@ -276,7 +276,7 @@ formatter.match({
   "location": "RestfulStepdefs.requesting_url(String)"
 });
 formatter.result({
-  "duration": 118463446,
+  "duration": 10090627,
   "status": "passed"
 });
 formatter.match({
@@ -289,7 +289,7 @@ formatter.match({
   "location": "RestfulStepdefs.status_code_will_be(int)"
 });
 formatter.result({
-  "duration": 2358706,
+  "duration": 710957,
   "status": "passed"
 });
 formatter.match({
@@ -302,19 +302,19 @@ formatter.match({
   "location": "RestfulStepdefs.response_content_contains(String)"
 });
 formatter.result({
-  "duration": 5181114,
+  "duration": 1474941,
   "status": "passed"
 });
 formatter.after({
-  "duration": 630886,
+  "duration": 1073834,
   "status": "passed"
 });
 formatter.before({
-  "duration": 439013,
+  "duration": 362897,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3142260,
+  "duration": 2389224,
   "status": "passed"
 });
 formatter.background({
@@ -339,7 +339,7 @@ formatter.match({
   "location": "RepositoryStepdefs.data_fixture_is_loaded(String)"
 });
 formatter.result({
-  "duration": 1152433,
+  "duration": 870480,
   "status": "passed"
 });
 formatter.scenario({
@@ -386,7 +386,7 @@ formatter.match({
   "location": "RestfulStepdefs.catalogue_with_books()"
 });
 formatter.result({
-  "duration": 783884,
+  "duration": 630191,
   "status": "passed"
 });
 formatter.match({
@@ -399,7 +399,7 @@ formatter.match({
   "location": "RestfulStepdefs.requesting_url(String)"
 });
 formatter.result({
-  "duration": 13439113,
+  "duration": 7006742,
   "status": "passed"
 });
 formatter.match({
@@ -412,7 +412,7 @@ formatter.match({
   "location": "RestfulStepdefs.status_code_will_be(int)"
 });
 formatter.result({
-  "duration": 106769,
+  "duration": 134870,
   "status": "passed"
 });
 formatter.match({
@@ -425,11 +425,11 @@ formatter.match({
   "location": "RestfulStepdefs.response_content_contains(String)"
 });
 formatter.result({
-  "duration": 82604,
+  "duration": 140240,
   "status": "passed"
 });
 formatter.after({
-  "duration": 579278,
+  "duration": 638817,
   "status": "passed"
 });
 });

@@ -24,11 +24,11 @@ Feature: Finding a book via REST API
 
   Background:                           # org/test/restful.feature:3
     Given packt-books fixture is loaded # RepositoryStepdefs.data_fixture_is_loaded(String)
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ISBN org.test.bookpub.controllers.Isbn@3fbd0ffb
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ISBN org.test.bookpub.controllers.Isbn@2b7a7142
 
   Background:                           # org/test/restful.feature:3
     Given packt-books fixture is loaded # RepositoryStepdefs.data_fixture_is_loaded(String)
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ISBN org.test.bookpub.controllers.Isbn@4c6d2365
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ISBN org.test.bookpub.controllers.Isbn@54c95bd5
 
   @txn
   Scenario Outline: Using RESTful API to lookup books by ISBN # org/test/restful.feature:15
@@ -39,7 +39,7 @@ Feature: Finding a book via REST API
 
 3 Scenarios (3 passed)
 14 Steps (14 passed)
-0m0.300s
+0m0.398s
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
