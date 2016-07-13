@@ -9,5 +9,5 @@ import org.test.bookpub.entity.Book;
  */
 @Repository
 public interface BookRepository extends CrudRepository<Book, Long> {
-    public Book findBookByIsbn(String isbn);
+    Book findBookByIsbn(String isbn);
 }
