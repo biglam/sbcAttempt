@@ -10,6 +10,8 @@ import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.boot.test.TestRestTemplate;
 import org.springframework.boot.test.WebIntegrationTest;
 import org.springframework.http.MediaType;
+import org.springframework.jdbc.datasource.init.DatabasePopulatorUtils;
+import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -18,6 +20,8 @@ import org.springframework.web.context.WebApplicationContext;
 import org.test.bookpub.entity.Book;
 import org.test.bookpub.repository.BookRepository;
 
+
+import javax.sql.DataSource;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assert.*;
@@ -37,20 +41,33 @@ public class BookpubApplicationTests {
     private WebApplicationContext context;
     @Autowired
     private BookRepository repository;
+@Autowired
+private DataSource ds;
+
     @Value("${local.server.port}")
     private int port;
 
     private MockMvc mockMvc;
     private RestTemplate restTemplate = new TestRestTemplate();
+    private static boolean loadDataFixtures = true;
 
     @Before
     public void setupMockMvc() {
         mockMvc = MockMvcBuilders.webAppContextSetup(context).build();
     }
 
+    @Before
+    public void loadDataFixtures() {
+        if (loadDataFixtures) {
+            ResourceDatabasePopulator populator = new ResourceDatabasePopulator(context.getResource("classpath:/test-data.sql"));
+            DatabasePopulatorUtils.execute(populator, ds);
+            loadDataFixtures = false;
+        }
+    }
+
     @Test
     public void contextLoads() {
-        assertEquals(1, repository.count());
+        assertEquals(3, repository.count());
     }
 
     @Test
