@@ -13,11 +13,11 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 3048912,
+  "duration": 6237219,
   "status": "passed"
 });
 formatter.before({
-  "duration": 8211684,
+  "duration": 174219129,
   "status": "passed"
 });
 formatter.background({
@@ -42,7 +42,7 @@ formatter.match({
   "location": "RepositoryStepdefs.data_fixture_is_loaded(String)"
 });
 formatter.result({
-  "duration": 61920467,
+  "duration": 67881348,
   "status": "passed"
 });
 formatter.scenario({
@@ -78,7 +78,7 @@ formatter.match({
   "location": "RepositoryStepdefs.books_available_in_the_catalogue(int)"
 });
 formatter.result({
-  "duration": 1292675,
+  "duration": 1811227,
   "status": "passed"
 });
 formatter.match({
@@ -91,7 +91,7 @@ formatter.match({
   "location": "RepositoryStepdefs.searching_for_book_by_isbn(String)"
 });
 formatter.result({
-  "duration": 4573925,
+  "duration": 38595303,
   "status": "passed"
 });
 formatter.match({
@@ -104,11 +104,11 @@ formatter.match({
   "location": "RepositoryStepdefs.book_title_will_be(String)"
 });
 formatter.result({
-  "duration": 75056,
+  "duration": 76289,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2445217,
+  "duration": 2563533,
   "status": "passed"
 });
 formatter.uri("org/test/restful.feature");
@@ -187,11 +187,11 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 357953,
+  "duration": 454298,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2194657,
+  "duration": 2810500,
   "status": "passed"
 });
 formatter.background({
@@ -216,7 +216,7 @@ formatter.match({
   "location": "RepositoryStepdefs.data_fixture_is_loaded(String)"
 });
 formatter.result({
-  "duration": 717094,
+  "duration": 1011429,
   "status": "passed"
 });
 formatter.scenario({
@@ -263,7 +263,7 @@ formatter.match({
   "location": "RestfulStepdefs.catalogue_with_books()"
 });
 formatter.result({
-  "duration": 508958,
+  "duration": 870349,
   "status": "passed"
 });
 formatter.match({
@@ -276,7 +276,7 @@ formatter.match({
   "location": "RestfulStepdefs.requesting_url(String)"
 });
 formatter.result({
-  "duration": 10090627,
+  "duration": 95463414,
   "status": "passed"
 });
 formatter.match({
@@ -289,7 +289,7 @@ formatter.match({
   "location": "RestfulStepdefs.status_code_will_be(int)"
 });
 formatter.result({
-  "duration": 710957,
+  "duration": 1823812,
   "status": "passed"
 });
 formatter.match({
@@ -302,19 +302,19 @@ formatter.match({
   "location": "RestfulStepdefs.response_content_contains(String)"
 });
 formatter.result({
-  "duration": 1474941,
+  "duration": 3245452,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1073834,
+  "duration": 660077,
   "status": "passed"
 });
 formatter.before({
-  "duration": 362897,
+  "duration": 396169,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2389224,
+  "duration": 3262005,
   "status": "passed"
 });
 formatter.background({
@@ -339,7 +339,7 @@ formatter.match({
   "location": "RepositoryStepdefs.data_fixture_is_loaded(String)"
 });
 formatter.result({
-  "duration": 870480,
+  "duration": 1225388,
   "status": "passed"
 });
 formatter.scenario({
@@ -386,7 +386,7 @@ formatter.match({
   "location": "RestfulStepdefs.catalogue_with_books()"
 });
 formatter.result({
-  "duration": 630191,
+  "duration": 905900,
   "status": "passed"
 });
 formatter.match({
@@ -399,7 +399,7 @@ formatter.match({
   "location": "RestfulStepdefs.requesting_url(String)"
 });
 formatter.result({
-  "duration": 7006742,
+  "duration": 9832258,
   "status": "passed"
 });
 formatter.match({
@@ -412,7 +412,7 @@ formatter.match({
   "location": "RestfulStepdefs.status_code_will_be(int)"
 });
 formatter.result({
-  "duration": 134870,
+  "duration": 105063,
   "status": "passed"
 });
 formatter.match({
@@ -425,11 +425,11 @@ formatter.match({
   "location": "RestfulStepdefs.response_content_contains(String)"
 });
 formatter.result({
-  "duration": 140240,
+  "duration": 88000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 638817,
+  "duration": 580283,
   "status": "passed"
 });
 });

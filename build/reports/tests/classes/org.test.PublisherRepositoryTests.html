@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.008s</div>
+<div class="counter">0.007s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">publishersExist</td>
-<td>0.008s</td>
+<td>0.007s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,30 +87,30 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>16:34:01.853 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class org.test.PublisherRepositoryTests]
-16:34:01.857 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-16:34:01.860 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-16:34:01.875 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [org.test.PublisherRepositoryTests] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
-16:34:01.888 [Test worker] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@292ae541 declaringClass = 'org.test.PublisherRepositoryTests', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
-16:34:01.893 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.test.PublisherRepositoryTests]: class path resource [org/test/PublisherRepositoryTests-context.xml] does not exist
-16:34:01.893 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.test.PublisherRepositoryTests]: class path resource [org/test/PublisherRepositoryTestsContext.groovy] does not exist
-16:34:01.893 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.test.PublisherRepositoryTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-16:34:01.894 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [org.test.PublisherRepositoryTests]
-16:34:01.903 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.boot.test.IntegrationTestPropertiesListener@2debea59, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@356b58af, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1b46b4a4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@25ade9c9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@57e66607, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@38a7e274]
-16:34:01.905 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.test.PublisherRepositoryTests]
-16:34:01.905 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.test.PublisherRepositoryTests]
-16:34:01.905 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.test.PublisherRepositoryTests]
-16:34:01.905 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.test.PublisherRepositoryTests]
-16:34:01.907 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6a9dde86 testClass = PublisherRepositoryTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@72045593 testClass = PublisherRepositoryTests, locations = '{}', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
-16:34:01.907 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.test.PublisherRepositoryTests]
-16:34:01.907 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.test.PublisherRepositoryTests]
-16:34:01.909 [Test worker] DEBUG org.springframework.test.util.ReflectionTestUtils - Getting field 'mergedContextConfiguration' from target object [[DefaultTestContext@6a9dde86 testClass = PublisherRepositoryTests, testInstance = org.test.PublisherRepositoryTests@47755f2d, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@72045593 testClass = PublisherRepositoryTests, locations = '{}', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]] or target class [class org.springframework.test.context.support.DefaultTestContext]
-16:34:01.910 [Test worker] DEBUG org.springframework.test.util.ReflectionTestUtils - Setting field 'propertySourceProperties' of type [null] on target object [[MergedContextConfiguration@72045593 testClass = PublisherRepositoryTests, locations = '{}', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]] or target class [class org.springframework.test.context.MergedContextConfiguration] to value [[Ljava.lang.String;@fdc0c2d]
-16:34:01.910 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@6a9dde86 testClass = PublisherRepositoryTests, testInstance = org.test.PublisherRepositoryTests@47755f2d, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@72045593 testClass = PublisherRepositoryTests, locations = '{}', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.IntegrationTest=true}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
-16:34:01.951 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
-16:34:01.952 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
-16:34:01.952 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-16:34:01.952 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+<pre>21:40:59.442 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class org.test.PublisherRepositoryTests]
+21:40:59.445 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:40:59.449 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:40:59.461 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [org.test.PublisherRepositoryTests] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+21:40:59.474 [Test worker] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@292ae541 declaringClass = 'org.test.PublisherRepositoryTests', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+21:40:59.478 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.test.PublisherRepositoryTests]: class path resource [org/test/PublisherRepositoryTests-context.xml] does not exist
+21:40:59.479 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.test.PublisherRepositoryTests]: class path resource [org/test/PublisherRepositoryTestsContext.groovy] does not exist
+21:40:59.479 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.test.PublisherRepositoryTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:40:59.480 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [org.test.PublisherRepositoryTests]
+21:40:59.488 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.boot.test.IntegrationTestPropertiesListener@2debea59, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@356b58af, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1b46b4a4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@25ade9c9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@57e66607, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@38a7e274]
+21:40:59.489 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.test.PublisherRepositoryTests]
+21:40:59.490 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.test.PublisherRepositoryTests]
+21:40:59.490 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.test.PublisherRepositoryTests]
+21:40:59.490 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.test.PublisherRepositoryTests]
+21:40:59.492 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6a9dde86 testClass = PublisherRepositoryTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@72045593 testClass = PublisherRepositoryTests, locations = '{}', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+21:40:59.492 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.test.PublisherRepositoryTests]
+21:40:59.492 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.test.PublisherRepositoryTests]
+21:40:59.494 [Test worker] DEBUG org.springframework.test.util.ReflectionTestUtils - Getting field 'mergedContextConfiguration' from target object [[DefaultTestContext@6a9dde86 testClass = PublisherRepositoryTests, testInstance = org.test.PublisherRepositoryTests@47755f2d, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@72045593 testClass = PublisherRepositoryTests, locations = '{}', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]] or target class [class org.springframework.test.context.support.DefaultTestContext]
+21:40:59.494 [Test worker] DEBUG org.springframework.test.util.ReflectionTestUtils - Setting field 'propertySourceProperties' of type [null] on target object [[MergedContextConfiguration@72045593 testClass = PublisherRepositoryTests, locations = '{}', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]] or target class [class org.springframework.test.context.MergedContextConfiguration] to value [[Ljava.lang.String;@fdc0c2d]
+21:40:59.494 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@6a9dde86 testClass = PublisherRepositoryTests, testInstance = org.test.PublisherRepositoryTests@47755f2d, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@72045593 testClass = PublisherRepositoryTests, locations = '{}', classes = '{class org.test.BookpubApplication, class org.test.TestMockBeansConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.IntegrationTest=true}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
+21:40:59.534 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+21:40:59.535 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+21:40:59.536 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+21:40:59.536 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -120,32 +120,32 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.3.6.RELEASE)
 
-2016-07-13 16:34:02.116  INFO 19573 --- [    Test worker] org.test.PublisherRepositoryTests        : Starting PublisherRepositoryTests on lam-System-Product-Name with PID 19573 (/home/lam/IdeaProjects/sbc-generated/build/classes/test started by lam in /home/lam/IdeaProjects/sbc-generated)
-2016-07-13 16:34:02.117  INFO 19573 --- [    Test worker] org.test.PublisherRepositoryTests        : No active profile set, falling back to default profiles: default
-2016-07-13 16:34:02.344  INFO 19573 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@57ec1669: startup date [Wed Jul 13 16:34:02 BST 2016]; root of context hierarchy
-2016-07-13 16:34:03.424  INFO 19573 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/lam/IdeaProjects/sbc-generated/build/resources/main/schema.sql]
-2016-07-13 16:34:03.453  INFO 19573 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/lam/IdeaProjects/sbc-generated/build/resources/main/schema.sql] in 29 ms.
-2016-07-13 16:34:03.455  INFO 19573 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/lam/IdeaProjects/sbc-generated/build/resources/test/data.sql]
-2016-07-13 16:34:03.458  INFO 19573 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/lam/IdeaProjects/sbc-generated/build/resources/test/data.sql] in 2 ms.
-2016-07-13 16:34:03.458  INFO 19573 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/lam/IdeaProjects/sbc-generated/build/resources/main/data.sql]
-2016-07-13 16:34:03.460  INFO 19573 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/lam/IdeaProjects/sbc-generated/build/resources/main/data.sql] in 1 ms.
-2016-07-13 16:34:03.529  INFO 19573 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2016-07-13 16:34:03.549  INFO 19573 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2016-07-13 21:40:59.690  INFO 5021 --- [    Test worker] org.test.PublisherRepositoryTests        : Starting PublisherRepositoryTests on lam-System-Product-Name with PID 5021 (/home/lam/IdeaProjects/sbc-generated/build/classes/test started by lam in /home/lam/IdeaProjects/sbc-generated)
+2016-07-13 21:40:59.690  INFO 5021 --- [    Test worker] org.test.PublisherRepositoryTests        : No active profile set, falling back to default profiles: default
+2016-07-13 21:40:59.849  INFO 5021 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@57ec1669: startup date [Wed Jul 13 21:40:59 BST 2016]; root of context hierarchy
+2016-07-13 21:41:01.029  INFO 5021 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/lam/IdeaProjects/sbc-generated/build/resources/main/schema.sql]
+2016-07-13 21:41:01.065  INFO 5021 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/lam/IdeaProjects/sbc-generated/build/resources/main/schema.sql] in 36 ms.
+2016-07-13 21:41:01.067  INFO 5021 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/lam/IdeaProjects/sbc-generated/build/resources/test/data.sql]
+2016-07-13 21:41:01.071  INFO 5021 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/lam/IdeaProjects/sbc-generated/build/resources/test/data.sql] in 4 ms.
+2016-07-13 21:41:01.071  INFO 5021 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/lam/IdeaProjects/sbc-generated/build/resources/main/data.sql]
+2016-07-13 21:41:01.072  INFO 5021 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/lam/IdeaProjects/sbc-generated/build/resources/main/data.sql] in 1 ms.
+2016-07-13 21:41:01.142  INFO 5021 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-07-13 21:41:01.163  INFO 5021 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2016-07-13 16:34:03.601  INFO 19573 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
-2016-07-13 16:34:03.604  INFO 19573 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2016-07-13 16:34:03.606  INFO 19573 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2016-07-13 16:34:03.774  INFO 19573 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
-2016-07-13 16:34:03.834  INFO 19573 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2016-07-13 16:34:03.934  INFO 19573 --- [    Test worker] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
-2016-07-13 16:34:04.918  INFO 19573 --- [    Test worker] o.t.b.dbcount.DbCountRunner              : PublisherRepository has 0 entries
-2016-07-13 16:34:05.067  INFO 19573 --- [    Test worker] o.t.b.dbcount.DbCountRunner              : ReviewerRepository has 0 entries
-2016-07-13 16:34:05.072  INFO 19573 --- [    Test worker] o.t.b.dbcount.DbCountRunner              : AuthorRepository has 2 entries
-2016-07-13 16:34:05.095  INFO 19573 --- [    Test worker] o.t.b.dbcount.DbCountRunner              : BookRepository has 2 entries
-2016-07-13 16:34:05.100  INFO 19573 --- [    Test worker] o.t.b.dbcount.DbCountRunner              : PublisherRepository has 2 entries
-2016-07-13 16:34:05.101  INFO 19573 --- [    Test worker] org.test.bookpub.StartupRunner           : Number of Books: 2
-2016-07-13 16:34:05.102  INFO 19573 --- [    Test worker] org.test.PublisherRepositoryTests        : Started PublisherRepositoryTests in 3.149 seconds (JVM running for 3.672)
+2016-07-13 21:41:01.226  INFO 5021 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-07-13 21:41:01.228  INFO 5021 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-07-13 21:41:01.230  INFO 5021 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-07-13 21:41:01.461  INFO 5021 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-07-13 21:41:01.531  INFO 5021 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-07-13 21:41:01.623  INFO 5021 --- [    Test worker] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-07-13 21:41:02.629  INFO 5021 --- [    Test worker] o.t.b.dbcount.DbCountRunner              : PublisherRepository has 0 entries
+2016-07-13 21:41:02.763  INFO 5021 --- [    Test worker] o.t.b.dbcount.DbCountRunner              : PublisherRepository has 2 entries
+2016-07-13 21:41:02.768  INFO 5021 --- [    Test worker] o.t.b.dbcount.DbCountRunner              : BookRepository has 2 entries
+2016-07-13 21:41:02.772  INFO 5021 --- [    Test worker] o.t.b.dbcount.DbCountRunner              : AuthorRepository has 2 entries
+2016-07-13 21:41:02.776  INFO 5021 --- [    Test worker] o.t.b.dbcount.DbCountRunner              : ReviewerRepository has 0 entries
+2016-07-13 21:41:02.778  INFO 5021 --- [    Test worker] org.test.bookpub.StartupRunner           : Number of Books: 2
+2016-07-13 21:41:02.779  INFO 5021 --- [    Test worker] org.test.PublisherRepositoryTests        : Started PublisherRepositoryTests in 3.241 seconds (JVM running for 3.709)
 </pre>
 </span>
 </div>
@@ -157,7 +157,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.13</a> at 13-Jul-2016 16:34:10</p>
+<a href="http://www.gradle.org">Gradle 2.13</a> at 13-Jul-2016 21:41:07</p>
 </div>
 </div>
 </body>
